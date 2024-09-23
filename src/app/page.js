@@ -57,10 +57,9 @@ export default function Home() {
   useEffect(() => {
     // Initialize WOW.js
     if (typeof window !== "undefined") {
-      const wowInstance = new WOW({
+      new WOW.WOW({
         live: false,
-      });
-      wowInstance.init();
+      }).init();
     }
   }, []);
 
