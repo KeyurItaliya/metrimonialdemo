@@ -26,9 +26,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 // import WOW from "wowjs";
 import dynamic from "next/dynamic";
-const WOW = dynamic(() => import("wowjs").then((mod) => mod.default), {
-  ssr: false,
-});
+// const WOW = dynamic(() => import("wowjs").then((mod) => mod.default), {
+//   ssr: false,
+// });
 import "animate.css";
 
 export default function Home() {
@@ -54,14 +54,14 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    // Initialize WOW.js
-    if (typeof window !== "undefined") {
-      new WOW.WOW({
-        live: false,
-      }).init();
-    }
-  }, []);
+  // useEffect(() => {
+  //   // Initialize WOW.js
+  //   if (typeof window !== "undefined") {
+  //     new WOW.WOW({
+  //       live: false,
+  //     }).init();
+  //   }
+  // }, []);
 
   const stories = [
     {
